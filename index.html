@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .img-container {
+            background-image: url('/assets/person.jpg');
+            width: 320px;
+            height: 200px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 5px;
+
+            position: relative;
+        }
+
+        .name {
+            position: absolute;
+            top: 65%;
+            color: rgb(228, 113, 113);
+            left: 20%;
+
+        }
+
+        .about-me {
+            text-align: center;
+            max-width: 320px;
+
+        }
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        a img {
+            width: 20px;
+        }
+
+        .card {
+            max-width: 320px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .image {
+
+            color: rgb(230, 221, 221);
+            text-align: center;
+            padding: 25px;
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+
+        .project-details {
+            display: flex;
+            padding: 0 15px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .desc {
+            font-size: 18px;
+            color: #666;
+            padding: 0 15px 15px 15px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .projects {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .person2 {
+            width: 100%;
+
+
+
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            max-width: 320px;
+
+            margin-top: 20px;
+            border-radius: 5px;
+
+            background-color: #8a73d6;
+            color: white;
+        }
+
+        footer h3 {
+            text-align: center;
+            font-size: 2rem;
+            padding: 0;
+            margin: 0;
+        }
+
+        .links {
+            text-align: center;
+            font-size: 1.6rem;
+            margin: 20px;
+        }
+
+        footer *:not(img) {
+            padding-left: 10px;
+        }
+
+        @media (min-width:700px) and (max-width:1000px) {
+            .projects {
+                width: 700px;
+                flex-wrap: wrap;
+                flex-direction: row;
+                gap: 30px;
+                background-color: #327c3f;
+                
+            }
+
+            footer {
+                max-width: 700px;
+            }
+            footer img{
+                align-self: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="img-container">
+            <h1 class="name">James Scott</h1>
+        </div>
+        <div class="about-me">
+            <h2>About me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor assumenda nihil exercitationem ullam modi
+                soluta suscipit itaque voluptatum consequatur, id, fugit placeat cupiditate quis! Voluptates reiciendis
+                laudantium voluptate perspiciatis corrupti?</p>
+            <div class="links">
+                <a href="#"> <i class="devicon-twitter-original colored"></i>
+                </a>
+                <a href="#"><i class="devicon-linkedin-plain colored"></i></a>
+                <a href="#"><i class="devicon-github-original colored"></i></a>
+
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <h3>My work</h3>
+        <div class="projects">
+            <div class="card">
+                <div class="image" style="background-color: #8a73d6;">
+                    <p>Screenshoot of project</p>
+                </div>
+                <div class="project-details">
+                    <h3>Project name</h3>
+                    <div class="icons">
+                        <a href="#"><i class="devicon-github-original colored"></i></a>
+                        <a href="#"><img src="assets/open-in-new.svg"></a>
+                    </div>
+                </div>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique assumenda
+                    fugiat perferendis
+                    quae atque.</p>
+
+            </div>
+            <div class="card">
+                <div class="image" style="background-color: #ec9027;">
+                    <p>Screenshoot of project</p>
+                </div>
+                <div class="project-details">
+                    <h3>Project name</h3>
+                    <div class="icons">
+                        <a href="#"><i class="devicon-github-original colored"></i></a>
+                        <a href="#"><img src="assets/open-in-new.svg"></a>
+                    </div>
+                </div>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique assumenda
+                    fugiat perferendis
+                    quae atque.</p>
+
+            </div>
+
+            <div class="card">
+                <div class="image" style="background-color: #528f2a;">
+                    <p>Screenshoot of project</p>
+                </div>
+                <div class="project-details">
+                    <h3>Project name</h3>
+                    <div class="icons">
+                        <a href="#"><i class="devicon-github-original colored"></i></a>
+                        <a href="#"><img src="assets/open-in-new.svg"></a>
+                    </div>
+                </div>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique assumenda
+                    fugiat perferendis
+                    quae atque.</p>
+
+            </div>
+            <div class="card">
+                <div class="image" style="background-color: #7a487a;">
+                    <p>Screenshoot of project</p>
+                </div>
+                <div class="project-details">
+                    <h3>Project name</h3>
+                    <div class="icons">
+                        <a href="#"><i class="devicon-github-original colored"></i></a>
+                        <a href="#"><img src="assets/open-in-new.svg"></a>
+                    </div>
+                </div>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique assumenda
+                    fugiat perferendis
+                    quae atque.</p>
+
+            </div>
+            <div class="card">
+                <div class="image" style="background-color: #6669e4;">
+                    <p>Screenshoot of project</p>
+                </div>
+                <div class="project-details">
+                    <h3>Project name</h3>
+                    <div class="icons">
+                        <a href="#"><i class="devicon-github-original colored"></i></a>
+                        <a href="#"><img src="assets/open-in-new.svg"></a>
+                    </div>
+                </div>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique assumenda
+                    fugiat perferendis
+                    quae atque.</p>
+
+            </div>
+
+            <div class="card">
+                <div class="image" style="background-color: #327c3f;">
+                    <p>Screenshoot of project</p>
+                </div>
+                <div class="project-details">
+                    <h3>Project name</h3>
+                    <div class="icons">
+                        <a href="#"><i class="devicon-github-original colored"></i></a>
+                        <a href="#"><img src="assets/open-in-new.svg"></a>
+                    </div>
+                </div>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique assumenda
+                    fugiat perferendis
+                    quae atque.</p>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>Contact me</h3>
+        <p>Please get in touch if you think my work is beneficial</p>
+        <div>
+
+            <p>1234 Random Road</p>
+            <p>Random Town, California 12345</p>
+        </div>
+
+        <div>
+            <p>555-555-5555</p>
+            <p>jamesScott@example.com</p>
+        </div>
+        <div class="links">
+            <a href="#"> <i class="devicon-twitter-original colored"></i>
+            </a>
+            <a href="#"><i class="devicon-linkedin-plain colored"></i></a>
+            <a href="#"><i class="devicon-github-original colored"></i></a>
+
+        </div>
+        <img src="assets/person2.jpg" alt="" class="person2">
+    </footer>
+
+</body>
+
+</html>
