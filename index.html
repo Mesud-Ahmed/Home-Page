@@ -152,14 +152,39 @@
                 flex-direction: row;
                 gap: 30px;
                 background-color: #327c3f;
-                
+
             }
 
             footer {
-                max-width: 700px;
+                min-width: 700px;
+                position: relative;
+
             }
-            footer img{
-                align-self: flex-start;
+
+            footer *:not(img) {
+                width: 200px;
+            }
+
+            .person2 {
+                width: 400px;
+                position: absolute;
+                top: 80px;
+                right: 0px;
+                height: 350px;
+
+            }
+
+           
+            header{
+                flex-direction: row;
+            }
+            .about-me,.img-container{
+                flex:1;
+                max-width: 30%;
+               padding: 10px;
+            }
+            .none{
+                display: none;
             }
         }
     </style>
@@ -175,7 +200,7 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor assumenda nihil exercitationem ullam modi
                 soluta suscipit itaque voluptatum consequatur, id, fugit placeat cupiditate quis! Voluptates reiciendis
                 laudantium voluptate perspiciatis corrupti?</p>
-            <div class="links">
+            <div class="links none">
                 <a href="#"> <i class="devicon-twitter-original colored"></i>
                 </a>
                 <a href="#"><i class="devicon-linkedin-plain colored"></i></a>
