@@ -151,7 +151,7 @@
                 flex-wrap: wrap;
                 flex-direction: row;
                 gap: 30px;
-                background-color: #327c3f;
+                
 
             }
 
@@ -180,11 +180,57 @@
             }
             .about-me,.img-container{
                 flex:1;
-                max-width: 30%;
+                max-width: 40%;
                padding: 10px;
             }
             .none{
                 display: none;
+            }
+            .img-container{
+                width: 350px;
+                height: 300px;
+                
+            }
+            
+        }
+        @media (min-width: 1000px){
+            header{
+                flex-direction: row;
+            }
+            .about-me,.img-container{
+                flex:1;
+                max-width: 30%;
+               padding: 10px;
+            }
+            .projects {
+                width: 80%;
+                flex-wrap: wrap;
+                flex-direction: row;
+                column-gap: 15px;
+                
+
+            }
+            footer{
+                min-width: 80%;
+                position: relative;
+            }
+            .card{
+                flex: 1;
+                min-width: 30%;
+                max-width: 50%;
+            }
+            .person2 {
+                max-width: 40%;
+                position: absolute;
+                top: 80px;
+                right: 0px;
+                height: 60%;
+
+            }
+            .img-container{
+                width: clamp(200px, 50%, 600px);
+                height: 400px;
+                
             }
         }
     </style>
